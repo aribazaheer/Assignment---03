@@ -1,0 +1,282 @@
+/* =========================================
+   STUDENT ADMISSION FORM - ASSIGNMENT 05
+   Main Theme: Blue
+   ========================================= */
+
+
+/* ---------- Element Selectors ---------- */
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background: #eaf3ff;
+    color: #1f2937;
+}
+
+h1 {
+    margin-bottom: 8px;
+    font-size: 32px;
+    color: #075985;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+/* ---------- Header ---------- */
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header p {
+    color: #64748b;
+    font-size: 16px;
+}
+
+
+/* ---------- Main Form Container ---------- */
+
+main {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+form {
+    background: white;
+    padding: 30px;
+    border: 2px solid #93c5fd;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.10);
+}
+
+
+/* ---------- Field Sections ---------- */
+
+fieldset {
+    border: 1px solid #bfdbfe;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 22px;
+    background: #f8fbff;
+}
+
+legend {
+    padding: 6px 12px;
+    background: #0ea5e9;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+/* ---------- Labels ---------- */
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    margin-top: 14px;
+    font-weight: bold;
+    color: #334155;
+}
+
+
+/* Required fields visually stand out */
+input:required,
+select:required,
+textarea:required {
+    border-left: 4px solid #0284c7;
+}
+
+
+/* ---------- Text Inputs ---------- */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="url"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: white;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+
+/* ---------- Focus Effect ---------- */
+/* Unique improvement #1:
+   Focused fields get a stronger border and shadow.
+   This helps the user know which field is active. */
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0284c7;
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.18);
+}
+
+
+/* ---------- Placeholder ---------- */
+
+input::placeholder,
+textarea::placeholder {
+    color: #94a3b8;
+}
+
+
+/* ---------- Radio & Checkbox ---------- */
+
+.option-group {
+    padding: 10px;
+    background: #eff6ff;
+    border-radius: 8px;
+}
+
+.option-group input {
+    margin-right: 5px;
+}
+
+.option-group label {
+    display: inline;
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+
+/* ---------- Buttons ---------- */
+
+.button-area {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.submit-btn {
+    background: #0284c7;
+    color: white;
+}
+
+.reset-btn {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+
+/* ---------- Hover Effect ---------- */
+
+.submit-btn:hover {
+    background: #0369a1;
+    transform: translateY(-2px);
+}
+
+.reset-btn:hover {
+    background: #cbd5e1;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+
+/* ---------- Unique Design Improvement #2 ---------- */
+/*
+   I added a soft shadow and rounded corners to the form.
+   This gives the admission form a modern card-style appearance.
+   The CSS properties used are box-shadow, border-radius,
+   border and padding.
+*/
+
+form {
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.10);
+    border-radius: 16px;
+}
+
+
+/* ---------- ID Selectors ---------- */
+
+#fullName {
+    background-color: #f8fbff;
+}
+
+#motivation {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+/* ---------- Class Selectors ---------- */
+
+.submit-btn {
+    letter-spacing: 0.3px;
+}
+
+.reset-btn {
+    letter-spacing: 0.3px;
+}
+
+.button-area {
+    justify-content: center;
+}
+
+
+/* ---------- Responsive Design ---------- */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 8px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    form {
+        padding: 18px;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    .button-area {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .option-group label {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}
